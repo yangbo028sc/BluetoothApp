@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/bluetooth_logo"
+        android:layout_width="40dp"
+        android:layout_height="70dp"
+        android:src="@drawable/bluetooth" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bluetooth_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Null"
+            android:textColor="#000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/bluetooth_bond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/listview_textview_bond"
+            android:textColor="@color/blutooth_state_color"
+            android:textSize="@dimen/bluetooth_state_size" />
+
+        <TextView
+            android:id="@+id/bluetooth_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/listview_textview_connect"
+            android:textColor="@color/blutooth_state_color"
+            android:textSize="@dimen/bluetooth_state_size" />
+
+        <TextView
+            android:id="@+id/bluetooth_mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/listview_textview_mac"
+            android:textColor="#999"
+            android:textSize="@dimen/bluetooth_state_size" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bluetooth_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/listview_button"
+        android:textSize="@dimen/button_text_size"
+        />
+
+</LinearLayout>
